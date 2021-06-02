@@ -1,0 +1,6 @@
+a=open("file_1.txt","r")
+b=open("file_2.txt","r")
+d=open("file_3.txt","w")
+c=a.read()+b.read()
+d.write(c)
+print(c)
