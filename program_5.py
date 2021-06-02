@@ -1,12 +1,14 @@
 import matplotlib.pyplot as plt
 import math
 import numpy as np
-
-# Prepare the data
-y=list(range(1,101))                     
-x=list(range(1,101)) 
-for i in range(99):
- y[i] = x[i]**2 + math.log(x[i]/2)
+x=open("file.txt","r")
+x=x.read()
+x=x.split(" ")
+for i in range(100):
+    x[i]=int(x[i])
+y=list(range(1,101))                         
+for i in range(1,99):
+    y[i] = x[i]**2 + math.log(x[i]/2)
   
 
 
